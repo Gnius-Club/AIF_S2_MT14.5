@@ -1,24 +1,275 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Misión 14.5 : El Exterminador de Bugs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Misión 14.5 : El Exterminador de Bugs</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Misión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Aplicar de forma intensiva habilidades de depuración colaborativa con IA.</li>
+                                        <li>Encontrar y corregir múltiples errores (lógicos, de sintaxis, de estado, de objeto) en un proyecto pre-existente.</li>
+                                        <li>Alcanzar fluidez en el uso del protocolo de Quality Assurance (QA).</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Contextualización de la sesión como una cacería de bugs.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Presentación del Desafío:</strong> Simulación de un escenario de depuración del mundo real.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Adquisición del protocolo de depuración sistemática de 5 pasos.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Ejecución de ciclos repetitivos de depuración en un proyecto roto.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Retroalimentación sobre el proceso de depuración y la naturaleza de los bugs encontrados.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>La plantilla de proyecto de escape room "rota", completamente depurada y funcional, con todos los errores de sintaxis, lógica, estado y objeto corregidos.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Una plantilla de proyecto de Delightex que contenga intencionadamente 3-4 bugs de diferente naturaleza.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Preparar y probar la plantilla "rota" para asegurar que los bugs son variados y solucionables dentro del tiempo.</li>
+                                                <li>Verificar que Xolo puede actuar como "pair programmer", dando pistas sin revelar la solución directamente.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Internalizar el protocolo de QA de 5 pasos para poder guiar a los estudiantes a seguirlo rigurosamente.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. y Contexto de Misión ⏰ 3 minutos</h2>
+                <p>Establecer un ambiente de trabajo de alta intensidad y enmarcar la sesión como un caso práctico real.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta la misión: la cacería de bugs.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Detectives. Han sido entrenados. Conocen el protocolo. Hoy, se enfrentan a un caso real. Les entregaré un proyecto con múltiples fallos. Algunos son obvios, otros sutiles. Su misión es simple: encontrar y exterminar cada bug hasta que el sistema sea estable. La práctica intensiva forja la maestría."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de IA y Perfil ⏰ 2 minutos</h3>
+                            <p>El facilitador da la instrucción explícita a los alumnos para que saluden a Xolo en el chat.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Activen su sesión de trabajo para la Misión 14.5. Ya conocen el protocolo estándar para iniciar su diálogo con Xolo."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 5 minutos</h2>
+                <p>Clarificar las metas de aprendizaje y presentar la depuración sistemática como una habilidad profesional crucial.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Desafío del Día ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador introduce el escenario de heredar y arreglar código ajeno.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Esta es una sesión de práctica de alta intensidad. Es un simulacro de lo que ocurre en el mundo real: a menudo, un programador hereda código de otro y debe entenderlo y arreglarlo. Se les entregará una plantilla de escape room que he saboteado intencionadamente. Deberán usar su habilidad para dialogar con Xolo y resolver el caso."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Objetivo de Aprendizaje (I Can Statement) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje concreto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Al finalizar esta sesión, podrán afirmar con total seguridad: <strong>'Yo puedo depurar de forma sistemática un proyecto de software complejo, colaborando eficientemente con una IA para resolver tanto errores de sintaxis como de lógica.'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM ⏰ 5 minutos</h2>
+                <p>Establecer el protocolo de Quality Assurance (QA) que los estudiantes deben seguir durante la sesión.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Diálogo Conceptual con Xolo ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador instruye a los estudiantes sobre cómo obtener su protocolo de trabajo de Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Entramos al A.I. GYM. En una cacería de bugs, la estrategia es clave. No pueden arreglarlo todo a la vez. Necesitan un protocolo. Consulten a su Supervisor de QA. Díganle a Xolo: <strong>'Xolo, como nuestro Supervisor de QA, entréganos el protocolo de 5 pasos para la depuración sistemática.'</strong> Él les dará la estrategia que deben seguir rigurosamente hoy."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 20 minutos</h2>
+                <p>Supervisar la práctica intensiva de depuración, donde los equipos aplican el protocolo de QA en un ciclo repetitivo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: La Caza de Bugs ⏰ 20 minutos</h3>
+                            <p>(Proyectar Diapositiva 6 y 7) Los equipos reciben el proyecto roto y aplican el ciclo de depuración (aislar, formular, implementar, probar, repetir).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ahora, al Brain Spark. Les doy acceso al proyecto roto. Su sesión de 'pair programming' con Xolo comienza ahora. Sigan el protocolo al pie de la letra. 1. Jueguen hasta que algo se rompa y aíslen ese primer bug. 2. Formulen el prompt de 3 partes. 3. Implementen la hipótesis de Xolo. 4. Hagan una prueba de regresión para asegurar que no rompieron otra cosa. 5. Repitan el ciclo con el siguiente bug. Este es el verdadero trabajo de un ingeniero de software."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Moderar una fase de retroalimentación estructurada sobre el proceso de depuración y los tipos de errores encontrados.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 8) El facilitador guía una breve reflexión sobre el bug más desafiante.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Tiempo. Reflexión individual. ¿Cuántos bugs lograron exterminar? Piensen en el bug más 'astuto' o difícil que encontraron. ¿Por qué fue tan desafiante? ¿Qué les enseñó sobre cómo se conectan las diferentes partes de un programa?"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Intercambio en Parejas) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) En parejas, los estudiantes comparten el descubrimiento y la solución del bug más interesante.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"En parejas. Compartan el bug más interesante que encontraron. Expliquen no solo el bug, sino el proceso de razonamiento que siguieron junto con Xolo para descubrirlo y arreglarlo. El compañero escucha y prepara su feedback."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Retroalimentación Estructurada) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 10) El facilitador provee una estructura para el feedback sobre el proceso de análisis.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Para el feedback, usen esta estructura: <strong>1. 'La forma en que analizaron ese bug fue inteligente porque...' 2. 'Una pregunta que tengo sobre el error de [lógica/sintaxis] es...' 3. 'Entender ese bug me ayuda a comprender mejor cómo...'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Síntesis y Cierre ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 11) El facilitador concluye la sesión, consolidando la depuración como un ciclo y no un camino lineal.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Hoy han experimentado el verdadero trabajo de un ingeniero de software. No es un camino lineal, es un ciclo de creación y corrección. La habilidad de depurar de forma sistemática y colaborativa es lo que separa a los aficionados de los profesionales. Han demostrado resiliencia y una gran capacidad de análisis. Con esta base, están listos para crear sus propias experiencias complejas. Felicidades por la cacería."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
